@@ -1,0 +1,8 @@
+#F7941D(orange)
+
+#0071BC(blue)
+
+#454444(gray)
+
+linear-gradient(301deg, rgba(0,113,188,1) 0%, rgba(0,48,142,1) 100%)
+

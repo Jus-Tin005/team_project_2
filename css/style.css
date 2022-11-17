@@ -1,0 +1,729 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face{
+    src: url("../Fonts/VarelaRound-Regular.ttf");
+    font-family: VarelaRound-Regular ;
+}
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: "Poppins", sans-serif; */
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+   
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 60px;
+    background: white; */
+}
+#head{
+    padding: 12px 60px;
+}
+.logo img{
+    max-width: 100%;
+    width: 200px;
+}
+.login_btn{
+    background: transparent;
+    border: none;
+    padding: 15px 10px;
+    /* margin: 4px 0; */
+    border-radius: 20px;
+    font-size: 16px;
+    transition: .4s ease;
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+.login_btn:hover{
+    color: #F7941D;
+}
+.search{
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 2px;
+    max-width: 100%;
+    width: 160px;
+    border: 2px solid rgba(128, 128, 128, 0.644);
+    outline: #F7941D;
+    /* outline-offset: #F7941D; */
+}
+.search::placeholder{
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.501);
+}
+.lock{
+    margin-top: 5px;
+}
+.fa-search{
+    font-size: 20px;
+    color: #F7941D;
+}
+.fa-lock{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+/* nav  */
+#bar{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 10001;
+}
+.navBar{
+    /* background: #0071BC; */
+    position: sticky;
+    opacity: 90%;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(301deg, rgba(0,113,188,1) 0%, rgba(0,48,142,1) 100%);
+    width: 100%;
+    max-height: 10vh;
+    padding: 12px 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+
+}
+.navList{
+    display: flex;
+}
+.navList{
+    font-size: 14px;
+}
+.navDrops a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+ .dropdown-menu{
+    padding: 10px;
+ }
+ .dropdown-item{
+    border-radius: 5px;
+    padding: 2px 6px;
+ }
+ .dropdown-item:hover{
+    background: #0071BC;
+    color: white;
+    transition: .3s;
+ }
+.navList li,.navDrops a{
+    padding: 15px 26px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.navList li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navList li:hover,.navDrops a:hover{
+    /* transform: scale(1.2); */
+    color: #F7941D;
+}
+.navList li a.active,.navList li a:hover{
+    color: #F7941D;
+    transition: .3s;
+}
+
+
+
+
+
+
+/* home page  */
+
+.carousel-indicators [data-bs-target]{
+    border-radius: 50% !important;
+    width: 10px;
+    height: 10px;
+}
+.imgOva{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.overlay0{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    right: 30%;
+    bottom: 20%;
+    /* transform: translate(-50%,-50%); */
+    font-family: "Poppins", sans-serif;
+
+}
+.overlay0 h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+}
+.overlay0 p{
+    font-size: 25px;
+    text-align: left;
+}
+.btnOva{
+    background: transparent;
+    border: 1.5px solid #ffffff;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: .4s ease;
+    color: #ffffff;
+}
+.btnOva:hover{
+    background: #F7941D;
+    border: 1.5px solid #F7941D;
+    color: rgb(255, 255, 255);
+}
+.btnOva2{
+    background: #F7941D;
+    border: 1.5px solid #F7941D;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: .4s ease;
+    color: #ffffff;
+}
+.btnOva2:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* welcome  */
+.welcome{
+    padding: 40px 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: VarelaRound-Regular;
+
+}
+.welcome_text h2{
+    font-size: 30px;
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.welcome_text p{
+    max-width: 100%;
+    width: 900px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: VarelaRound-Regular ;
+}   
+.welcome_text{
+    text-align: start;
+    margin: auto;
+}
+.welcome_img img{
+    max-width: 90%;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+    overflow-x: hidden;
+    max-height: 100%;
+    height: 350px;
+}
+.welcomeBtn{
+    border: 1px solid #0071BC;
+    border-radius: 10px;
+    color: #0071BC;
+    background: transparent;
+    font-size: 12px;
+    padding: 7px 15px;
+    transition: .4s;
+}
+.welcomeBtn:hover{
+    background: #0071BC;
+    color: white;
+}
+
+
+
+
+/* icon  */
+.iconList{
+    background: #0071BC;
+    color: white;
+}
+.iconList2{
+    background: #F7941D;
+    color: white;
+}
+.iconList img,
+.iconList2 img{
+    filter: invert(100%) sepia(0%) saturate(7446%) hue-rotate(307deg) brightness(95%) contrast(104%);
+}
+.iconMenu div{
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+.iconMenu div h3{
+    padding: 30px 30px 0 30px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.icons h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    color: #0071BC;
+}
+
+
+
+
+
+
+/*about us*/
+#aboutus{
+    font-family: VarelaRound-Regular ;
+}
+#about-text{
+    background-color: #0071BC;
+    color: #fff;
+    font-family: VarelaRound-Regular ;
+}
+
+.div1 div, .div2 div{
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    margin: 3rem auto;
+    
+
+}
+.aboutText{
+    font-family: VarelaRound-Regular ;
+
+}
+#about-text .div1 p, .div2 p, .div3 p{
+    padding-top: 1.2rem;
+    font-family: VarelaRound-Regular ;
+
+}
+#about-text .div1 h3, .div2 h3, .div3 h3{
+    font-family: VarelaRound-Regular ;
+
+}
+
+#about-text .div1, #about-text .div2, #about-text .div3{
+    padding: 0 3rem;
+    
+}
+
+.div3{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/*contact us*/
+
+#contactus{
+  padding-top: 3rem;
+}
+
+#contactus h2, #aboutus h2{
+  font-family: VarelaRound-Regular;
+  color: #0071BC;
+}
+
+#contactus p{
+    font-family: VarelaRound-Regular;
+}
+
+#form button{
+    border: none;
+    background-color: #0071BC;
+    margin-top: 2rem;
+    padding: 10px 15px;
+    border-radius: 20px;
+    float: right;
+    font-family: VarelaRound-Regular;
+}
+
+.contact-info{
+    background-color: #0071BC;
+    border-radius: 20px;
+}
+
+.contact-info .d-flex{
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    color: #fff;
+}
+
+#form div input, #form div textarea{
+    border-radius: 20px;
+}
+
+
+
+/* activity  */
+.mainProject{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainProject div{
+    position: relative;
+    flex: 1 1 20rem;
+    height: 300px;
+    margin: 10px;
+}
+
+
+
+/* footer  */
+footer{
+    padding: 40px 40px 20px 40px;
+    background: linear-gradient(301deg, rgba(0,113,188,1) 0%, rgba(0,48,142,1) 100%);
+}
+footer p, footer h5{
+    color: white;
+}
+.footerAbout p{
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+}
+.footerLinks h5, .footerInfo h5, .footerContact h5 {
+    margin-top: 20px;
+}
+.footerLinks div , .footerInfo div{
+    margin-bottom: 8px;
+}
+.footerLinks{
+    padding-left: 80px;
+}
+.footerLinks a,.footerInfo a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: .4s;
+}
+.footerLinks a:hover,.footerInfo a:hover{
+    color:#F7941D;
+}
+.footerContact p{
+    font-size: 14px;
+}
+.fa-circle{
+    color: #F7941D;
+    font-size: 8px;
+}
+.fa-home,.fa-phone,.fa-envelope{
+    color: #F7941D;
+    font-size: 18px;
+}
+.social_icons a i{
+    color: white;
+    font-size: 30px;
+    transition: .4s ease;
+}
+.social_icons a i:hover{
+    color: #F7941D;
+}
+.copyRight {
+    padding-top: 50px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+/*modal  */
+.modalDiv{
+    padding: 30px;
+}
+.modal-content{
+    width: 70% !important;
+    margin: auto;
+}
+.md_Title {
+    font-weight: bolder;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    font-family: VarelaRound-Regular;
+}
+.md_Btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+}
+
+.modal-dialog p, .modal-dialog p a{
+    font-family: VarelaRound-Regular;
+    font-size: 14px;
+    padding-top: 20px;
+}
+.modal-dialog p a{
+    text-decoration: none;
+    color: #f7951d;
+}
+
+
+
+/* register  */
+.registerPage {
+    padding: 0px 100px 0 0;
+    position: relative;
+    display: flex;
+    
+}
+.registerForm{
+    padding: 80px 0 0 80px;
+}
+.registerInput label{
+    font-family: VarelaRound-Regular;
+    margin-bottom: 10px;
+}
+.registerInput input{
+    width: 100%;
+    padding: 6px 12px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    font-family: VarelaRound-Regular;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+.registerBtn{
+    display: flex;
+    justify-content: end;
+}
+.registerBtn button{
+    background: transparent;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border: none;
+    background: #F7941D;
+    color: white;
+}
+.registerBg img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(30%) blur(1.2px) hue-rotate(20deg) contrast(120%);
+}
+.registerBg{
+    padding: 0!important;  
+    position: relative;
+    /* text-align: center; */
+    color: white;
+}
+.overlay2{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.overlay2 h5{
+    font-size: 16px;
+    text-align: left;
+    font-family: VarelaRound-Regular ;
+}
+.overlay2 p{
+    font-family: VarelaRound-Regular;
+    font-size: 14px;
+    color: rgba(205, 205, 205, 0.879);
+}
+.successAlert{
+    z-index: 1000;
+    width: 100%;
+    float: left;
+}
+
+
+
+/* login  */
+.loginPage{
+    position: relative;
+    align-items: center;
+}
+.loginPage img{
+    filter: blur(2px);
+}
+.overlay3{
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    background: white;
+    /* backdrop-filter: blur(20px); */
+    padding: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.form_Ui,.form_Btn{
+    padding: 7px 15px;
+    font-size: 13px;
+    border: 2px solid #f7951d7f;
+    border-radius: 20px;
+}
+.form_Btn{
+    border: none;
+    background: #f7951dcc;
+    color: white;
+}
+.overlay3 p{
+    font-family: VarelaRound-Regular;
+    font-size: 14px;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+}
+.overlay3 p a{
+    text-decoration: none;
+    color: #f7951d;
+    font-family: VarelaRound-Regular;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+
+.card{
+    padding: 0!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .footerAbout{
+        padding-left: 6px;
+    }
+    .footerLinks{
+        padding-left: 12px;
+    }
+    .mediaNone{
+        display: none;
+    }
+    header{
+        padding: 2px 20px;
+        position: sticky;
+        top: 0;
+    }
+    .navBar {
+        position: relative;
+        display: none;
+        background: transparent;
+    }
+    .navList{
+        display: block;
+        position: fixed;
+        /* background: rgba(192, 192, 192, 0.425); */
+        background: white;
+        /* backdrop-filter: blur(5px); */
+        width: 100%;
+        text-align: center;
+        line-height: 1.7;
+        top: 95px;
+        right: 0;
+        left: 0;
+        padding: 20px 100px;
+        z-index: 1000;
+    }
+    .navList a,.navList li a{
+        color: black;
+    }
+    .login_btn{
+        display: none;
+    }
+    .carousel-indicators [data-bs-target]{
+        display: none;
+    }
+    .btnOva,.btnOva2{
+        display: none;
+    }
+    .welcome{
+        padding: 40px 20px;
+    }
+    .welcome_text h2{
+        text-align: center;
+        margin-top: 14px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .welcome_text p{
+        font-size: 14px;
+    }
+    .welcomeBtn{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@media(max-width: 1200px){
+    #bar{
+        display: block;
+    }
+    .navBar{
+        display: none;
+    }
+    .overlay0 h1{
+        font-size: 20px;
+    }
+    .overlay0 p{
+        font-size: 11px;
+    }
+    #head{
+        padding: 10px;
+    }
+}
